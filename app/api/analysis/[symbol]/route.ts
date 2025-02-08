@@ -57,7 +57,6 @@ Format your response in JSON:
   "summary": "concise summary"
 }`;
 
-console.log('AI Validation Prompt:', prompt);
 
 const completion = await openai.chat.completions.create({
   model: 'o1-preview',
@@ -74,7 +73,6 @@ const completion = await openai.chat.completions.create({
     if (!content) {
       throw new Error('AI response content is null');
     }
-    console.log('AI Response:', content);
     // Clean the response by removing markdown code block syntax
     const cleanContent = content.replace(/```json\n|\n```/g, '');
     const response = JSON.parse(cleanContent) as AIValidation;
