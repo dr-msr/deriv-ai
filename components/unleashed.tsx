@@ -2,38 +2,22 @@
 
 import * as React from "react"
 import {
-  AlertCircle,
-  Archive,
-  ArchiveX,
   ChartArea,
-  File,
-  Inbox,
-  MessagesSquare,
   Search,
-  Send,
-  ShoppingCart,
-  Trash2,
-  Users2,
 } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Nav } from "./nav"
-import { type Mail } from "../lib/data"
-import { useMail } from "../lib/use-mail"
 import { Input } from "./ui/input"
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "./ui/resizable"
 import { Separator } from "./ui/separator"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
 import { TooltipProvider } from "./ui/tooltip"
 import { AccountSwitcher } from "./account-switcher"
-import { MailDisplay } from "./mail-display"
-import { MailList } from "./mail-list"
-import { FaChartLine } from "react-icons/fa6"
 import { CompanyList } from "./company"
 import { Company } from "@/lib/company"
 import { CompanyDisplay } from "./company-display"
-import { useCompany } from "@/lib/use-company"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
 interface UnleashedProps {
   accounts: {

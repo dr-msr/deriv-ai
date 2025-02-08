@@ -1,12 +1,8 @@
-import { ComponentProps } from "react"
-import { formatDistanceToNow } from "date-fns"
 
 import { cn } from "@/lib/utils"
 import { Badge } from "./ui/badge"
 import { ScrollArea } from "./ui/scroll-area"
-import { Separator } from "./ui/separator"
 import { Company } from "@/lib/company"
-import { useCompany } from "@/lib/use-company"
 import { useState } from "react"
 
 interface CompanyListProps {
@@ -63,18 +59,4 @@ export function CompanyList({ companies, setSelected }: CompanyListProps) {
       </div>
     </ScrollArea>
   )
-}
-
-function getBadgeVariantFromLabel(
-  label: string
-): ComponentProps<typeof Badge>["variant"] {
-  if (["work"].includes(label.toLowerCase())) {
-    return "default"
-  }
-
-  if (["personal"].includes(label.toLowerCase())) {
-    return "outline"
-  }
-
-  return "secondary"
 }

@@ -166,7 +166,7 @@ export async function GET() {
   ];
 
   // Generate realistic stock symbols (3-4 uppercase letters)
-  const generateSymbol = (index: number) => {
+  const generateSymbol = () => {
     const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const numbers = '0123456789';
     const length = Math.random() > 0.5 ? 3 : 4;
@@ -189,8 +189,8 @@ export async function GET() {
   };
 
   // Generate 50 sample companies
-  const sampleCompanies = Array.from({ length: 50 }, (_, index) => {
-    const symbol = generateSymbol(index);
+  const sampleCompanies = Array.from({ length: 50 }, () => {
+    const symbol = generateSymbol();
     const industry = getRandomItem(industries);
     const sector = getRandomItem(sectors);
     const companyType = getRandomItem(companyTypes);

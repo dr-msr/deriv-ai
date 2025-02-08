@@ -1,12 +1,13 @@
 import { OpenAI } from 'openai';
 import { NextResponse } from 'next/server';
+import { StockData } from '@/components/chart/chart';
 
 // Initialize OpenAI client
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 });
 
-export interface Event {
+export type Event = {
     headline: string;
     description: string;
     probability: number;
@@ -20,7 +21,7 @@ export async function POST(req: Request) {
         const { startDate, endDate, symbol, stockData } = await req.json();
 
         // Format the data for analysis
-        const dataPoints = stockData.map((data: any) => ({
+        const dataPoints = stockData.map((data: StockData) => ({
             date: data.Date,
             price: data.Close,
             volume: data.Volume,
@@ -36,7 +37,7 @@ For each event, provide:
 2. A brief description
 3. The probability of a similar event occurring again (as a percentage)
 4. The impact factor (1-10, where 10 is highest impact)
-5. A likely news URL (if applicable)
+5. A news URL (if applicable). Do not make up your own URL!
 
 Format your response as a JSON array of events with these properties:
 [{
@@ -61,6 +62,7 @@ Format your response as a JSON array of events with these properties:
                 }
             ],
             model: "gpt-4o-mini",
+            temperature: 0.1,
             response_format: { type: "json_object" },
         });
 

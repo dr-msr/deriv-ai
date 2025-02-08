@@ -40,15 +40,12 @@ import {
     TooltipTrigger,
 } from "./ui/tooltip"
 import { ScrollArea } from "./ui/scroll-area"
-import { Mail } from "../lib/data"
 import { Company } from "@/lib/company"
 import { Comment, CommentSection } from "./company-comment"
 import { useEffect, useState } from "react"
-import StockChart, { StockData } from "./chart/chart"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card"
-import { toast } from "@/hooks/use-toast"
+import { StockData } from "./chart/chart"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
-import { Input } from "./ui/input"
 import HistoricalData from "./tabs/historical"
 
 const initialComments: Comment[] = [
@@ -92,6 +89,7 @@ export function CompanyDisplay({ company }: CompanyDisplayProps) {
                 const jsonData = await response.json();
                 setData(jsonData);
             } catch (error) {
+                console.log(error)
             }
         };
 
@@ -273,24 +271,14 @@ export function CompanyDisplay({ company }: CompanyDisplayProps) {
                                     <TabsContent value="live" className="w-full">
                                         <Card>
                                             <CardHeader>
-                                                <CardTitle>Account</CardTitle>
+                                                <CardTitle>Live</CardTitle>
                                                 <CardDescription>
-                                                    Make changes to your account here. Click save when you're done.
+                                                    Real-time market data and live trading indicators for instant market analysis.
                                                 </CardDescription>
                                             </CardHeader>
                                             <CardContent className="space-y-2">
-                                                <div className="space-y-1">
-                                                    <Label htmlFor="name">Name</Label>
-                                                    <Input id="name" defaultValue="Pedro Duarte" />
-                                                </div>
-                                                <div className="space-y-1">
-                                                    <Label htmlFor="username">Username</Label>
-                                                    <Input id="username" defaultValue="@peduarte" />
-                                                </div>
+                                                <div className="space-y-1"> Pending</div>
                                             </CardContent>
-                                            <CardFooter>
-                                                <Button>Save changes</Button>
-                                            </CardFooter>
                                         </Card>
                                     </TabsContent>
                                     <TabsContent value="historical" className="w-full">
@@ -310,24 +298,18 @@ export function CompanyDisplay({ company }: CompanyDisplayProps) {
                                     <TabsContent value="forecast" className="w-full">
                                         <Card>
                                             <CardHeader>
-                                                <CardTitle>Account</CardTitle>
+                                                <CardTitle>Predictions</CardTitle>
                                                 <CardDescription>
-                                                    Make changes to your account here. Click save when you're done.
+                                                    AI-powered market predictions and trend analysis.
                                                 </CardDescription>
                                             </CardHeader>
                                             <CardContent className="space-y-2">
-                                                <div className="space-y-1">
-                                                    <Label htmlFor="name">Name</Label>
-                                                    <Input id="name" defaultValue="Pedro Duarte" />
-                                                </div>
-                                                <div className="space-y-1">
-                                                    <Label htmlFor="username">Username</Label>
-                                                    <Input id="username" defaultValue="@peduarte" />
+                                                <div className="flex h-[200px] items-center justify-center rounded-md border border-dashed">
+                                                    <div className="text-sm text-muted-foreground">
+                                                        Coming soon - AI predictions and trend analysis
+                                                    </div>
                                                 </div>
                                             </CardContent>
-                                            <CardFooter>
-                                                <Button>Save changes</Button>
-                                            </CardFooter>
                                         </Card>
                                     </TabsContent>                                    
                                 </Tabs>

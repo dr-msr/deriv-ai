@@ -2,9 +2,6 @@
 
 import * as React from "react"
 import { FaComputer } from "react-icons/fa6"
-
-import { cn } from "@/lib/utils"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select"
 import { Button } from "./ui/button"
 
 interface AccountSwitcherProps {
@@ -18,11 +15,7 @@ interface AccountSwitcherProps {
 
 export function AccountSwitcher({
   isCollapsed,
-  accounts,
 }: AccountSwitcherProps) {
-  const [selectedAccount, setSelectedAccount] = React.useState<string>(
-    accounts[0].email
-  )
   const [isHovered, setIsHovered] = React.useState(false)
 
   return (

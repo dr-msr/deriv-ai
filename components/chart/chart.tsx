@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card } from "../ui/card"
 import { Company } from "@/lib/company"
+import { Event } from "@/app/api/events/route"
 
 export type StockData = {
   Date: string
@@ -17,14 +18,25 @@ export type StockData = {
   Volume: number
 }
 
+interface TooltipPayloadItem {
+  name: string
+  value: number
+  dataKey: string
+  payload: StockData
+}
+
+interface CustomTooltipProps {
+  active?: boolean
+  payload?: TooltipPayloadItem[]
+  label?: string
+}
+
 export default function StockChart({ data, company }: { data: StockData[]; company: Company }) {
-  const [left, setLeft] = useState<string | undefined>()
-  const [right, setRight] = useState<string | undefined>()
   const [refAreaLeft, setRefAreaLeft] = useState<string | undefined>()
   const [refAreaRight, setRefAreaRight] = useState<string | undefined>()
   const [startDate, setStartDate] = useState<string>(data[0].Date)
   const [endDate, setEndDate] = useState<string>(data[data.length - 1].Date)
-  const [events, setEvents] = useState<any[]>([])
+  const [events, setEvents] = useState<Event[]>([])
   const [loading, setLoading] = useState(false)
 
   const filteredData = useMemo(() => {
@@ -144,7 +156,7 @@ export default function StockChart({ data, company }: { data: StockData[]; compa
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="Date" tickFormatter={formatDate} />
               <YAxis domain={["auto", "auto"]} />
-              <Tooltip content={<CustomTooltip />} />
+              <Tooltip content={<CustomTooltip active={false} payload={undefined} label={undefined} />} />
               <Legend verticalAlign="top" height={36} />
               <Area
                 type="monotone"
@@ -247,16 +259,16 @@ export default function StockChart({ data, company }: { data: StockData[]; compa
   )
 }
 
-function CustomTooltip({ active, payload, label }: any) {
+function CustomTooltip({ active, payload, label }: CustomTooltipProps) {
   if (active && payload && payload.length) {
-    const date = new Date(label)
+    const date = new Date(label || '')
     const day = date.getDate().toString().padStart(2, '0')
     const month = (date.getMonth() + 1).toString().padStart(2, '0')
     const formattedDate = `${day}-${month}`
     return (
       <div className="rounded-lg border bg-background p-2 shadow-sm">
         <div className="text-sm font-bold">{formattedDate}</div>
-        {payload.map((entry: any, index: number) => (
+        {payload.map((entry, index) => (
           <div key={index} className="text-xs">
             {entry.name}: ${entry.value.toFixed(2)}
           </div>
@@ -264,6 +276,5 @@ function CustomTooltip({ active, payload, label }: any) {
       </div>
     )
   }
-
   return null
 }
