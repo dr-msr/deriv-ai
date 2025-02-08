@@ -47,6 +47,13 @@ import { StockData } from "./chart/chart"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
 import HistoricalData from "./tabs/historical"
+import { Badge } from "./ui/badge"
+import { LiveAnalysis } from "./tabs/live"
+import { AnalysisResult } from "@/app/api/analysis/types"
+import TickerData from "./ticker"
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "./ui/dialog"
+import { cuid } from '@/lib/utils';
+import { useToast } from "@/hooks/use-toast"
 
 const initialComments: Comment[] = [
     {
@@ -75,6 +82,76 @@ export function CompanyDisplay({ company }: CompanyDisplayProps) {
     const [comments, setComments] = useState(initialComments)
     const today = new Date()
     const [data, setData] = useState<StockData[]>([])
+    const [activeTab, setActiveTab] = useState("live")
+    const [isLoadingAnalysis, setIsLoadingAnalysis] = useState(false);
+    const [analysisData, setAnalysisData] = useState<AnalysisResult | null>(null);
+    const [analysisError, setAnalysisError] = useState<string | null>(null);
+    const [userId, setUserId] = useState<string>("");
+    const [showAnalysisDialog, setShowAnalysisDialog] = useState(false);
+    const { toast } = useToast();
+
+    useEffect(() => {
+        // Initialize or get userId from localStorage
+        let storedUserId = localStorage.getItem('userId');
+        if (!storedUserId) {
+            storedUserId = cuid();
+            localStorage.setItem('userId', storedUserId);
+        }
+        setUserId(storedUserId);
+    }, []);
+
+    const handleTransaction = async (type: 'buy' | 'sell') => {
+        if (!analysisData) {
+            setShowAnalysisDialog(true);
+            return;
+        }
+
+        if (!company) return
+
+        try {
+            const response = await fetch('/api/transaction', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    companySymbol: company.symbol,
+                    buyerId: userId,
+                    type,
+                }),
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                // Store transaction in localStorage
+                const transactions = JSON.parse(localStorage.getItem('transactions') || '[]');
+                transactions.push({
+                    ...result.data,
+                    timestamp: new Date().toISOString(),
+                });
+                localStorage.setItem('transactions', JSON.stringify(transactions));
+
+                toast({
+                    title: 'Transaction Successful',
+                    description: `Successfully ${type === 'buy' ? 'bought' : 'sold'} ${company.symbol}`,
+                });
+            } else {
+                toast({
+                    title: 'Transaction Failed',
+                    description: result.error || 'An error occurred during the transaction',
+                    variant: 'destructive',
+                });
+            }
+        } catch (error) {
+            console.log(JSON.stringify(error))
+            toast({
+                title: 'Transaction Failed',
+                description: 'An error occurred while processing the transaction',
+                variant: 'destructive',
+            });
+        }
+    };
 
     useEffect(() => {
         const fetchData = async () => {
@@ -91,8 +168,11 @@ export function CompanyDisplay({ company }: CompanyDisplayProps) {
             } catch (error) {
                 console.log(error)
             }
-        };
-
+        };  
+        setIsLoadingAnalysis(false);
+        setAnalysisData(null);
+        setAnalysisError(null);
+        setActiveTab("live")      
         fetchData();
     }, [company?.symbol]);
 
@@ -236,9 +316,9 @@ export function CompanyDisplay({ company }: CompanyDisplayProps) {
             <Separator />
             {company ? (
                 <ScrollArea className="flex-1 h-[calc(100vh-200px)]">
-                    <div className="flex flex-1 flex-col">
-                        <div className="flex items-start p-4">
-                            <div className="flex items-start gap-4 text-sm">
+                    <div className="w-full flex-1 flex-col">
+                        <div className="w-full flex items-start p-4">
+                            <div className="w-full flex items-start gap-4 text-sm">
                                 <Avatar>
                                     <AvatarImage alt={company.name} />
                                     <AvatarFallback>
@@ -248,11 +328,64 @@ export function CompanyDisplay({ company }: CompanyDisplayProps) {
                                             .join("")}
                                     </AvatarFallback>
                                 </Avatar>
-                                <div className="grid gap-1">
+                                <div className="w-full grid gap-2">
+                                    <div className="w-full flex flex-row justify-between">
+                                    <div>
                                     <div className="font-semibold">{company.name}</div>
                                     <div className="line-clamp-1 text-xs">{company.description}</div>
-                                    <div className="line-clamp-1 text-xs">
-                                        <span className="font-medium">Reply-To:</span> {company.employees}
+
+                                    </div>
+                                    <div className="flex flex-row gap-2">
+                                        <Button 
+                                            variant="outline" 
+                                            size="lg" 
+                                            className="text-lg px-6"
+                                            onClick={() => handleTransaction('buy')}
+                                        >
+                                            Buy
+                                        </Button>
+                                        <Button 
+                                            variant="outline" 
+                                            size="lg" 
+                                            className="text-lg px-6"
+                                            onClick={() => handleTransaction('sell')}
+                                        >
+                                            Sell
+                                        </Button>
+                                        <Dialog open={showAnalysisDialog} onOpenChange={setShowAnalysisDialog}>
+                                            <DialogContent>
+                                                <DialogHeader>
+                                                    <DialogTitle>Analysis Required</DialogTitle>
+                                                    <DialogDescription>
+                                                        Please perform analysis first before making any transactions.
+                                                        This helps ensure informed trading decisions.
+                                                    </DialogDescription>
+                                                </DialogHeader>
+                                                <div className="flex justify-end">
+                                                    <Button onClick={() => setShowAnalysisDialog(false)}>
+                                                        Close
+                                                    </Button>
+                                                </div>
+                                            </DialogContent>
+                                        </Dialog>
+                                    </div>
+                                    </div>
+
+                                    <div className="w-full flex flex-row line-clamp-1 text-xs justify-between">
+                                        <div className="space-x-2">
+                                        <Badge>{company.sector}</Badge>
+                                        <Badge>{company.industry}</Badge>
+                                        <Badge>{company.employees} employees</Badge>
+
+                                        </div>
+
+                                        <div className="flex flex-row gap-2">
+                                        <Badge className="bg-red-500">${company.stock_price.high_52_week} </Badge>
+                                        <Badge> $ {company.stock_price.current} </Badge>
+                                        <Badge className="bg-green-500">$ {company.stock_price.low_52_week} </Badge>
+                                        </div>
+
+
                                     </div>
                                 </div>
                             </div>
@@ -262,7 +395,7 @@ export function CompanyDisplay({ company }: CompanyDisplayProps) {
                         <Separator />
                         <div className="flex items-center p-4">
                             <div className="w-full flex items-center gap-4 text-sm">
-                                <Tabs defaultValue="live" className="w-full">
+                                <Tabs defaultValue="live" className="w-full" value={activeTab} onValueChange={setActiveTab}>
                                     <TabsList className="grid w-full grid-cols-3">
                                         <TabsTrigger value="live">Live</TabsTrigger>
                                         <TabsTrigger value="historical">Historical</TabsTrigger>
@@ -271,13 +404,60 @@ export function CompanyDisplay({ company }: CompanyDisplayProps) {
                                     <TabsContent value="live" className="w-full">
                                         <Card>
                                             <CardHeader>
-                                                <CardTitle>Live</CardTitle>
+                                                <CardTitle>Live Analysis</CardTitle>
                                                 <CardDescription>
-                                                    Real-time market data and live trading indicators for instant market analysis.
+                                                    Real-time market analysis and AI insights
                                                 </CardDescription>
                                             </CardHeader>
                                             <CardContent className="space-y-2">
-                                                <div className="space-y-1"> Pending</div>
+                                                <TickerData company={company} />
+                                                {isLoadingAnalysis ? (
+                                                    <div className="flex h-[200px] items-center justify-center rounded-md border border-dashed">
+                                                        <div className="text-sm text-muted-foreground">
+                                                            Loading analysis...
+                                                        </div>
+                                                    </div>
+                                                ) : analysisError ? (
+                                                    <div className="flex h-[200px] items-center justify-center rounded-md border border-dashed border-destructive">
+                                                        <div className="text-sm text-destructive">
+                                                            {analysisError}
+                                                        </div>
+                                                    </div>
+                                                ) : analysisData ? (
+                                                    <LiveAnalysis data={analysisData} />
+                                                ) : (
+                                                    <div className="flex h-[200px] items-center justify-center rounded-md border border-dashed">
+                                                        <div className="text-sm text-muted-foreground">
+                                                            <Button 
+                                                                onClick={async () => {
+                                                                    if (!company?.symbol) return;
+                                                                    
+                                                                    setIsLoadingAnalysis(true);
+                                                                    setAnalysisError(null);
+                                                                    
+                                                                    try {
+                                                                        const response = await fetch(`/api/analysis/${company.symbol}`);
+                                                                        if (!response.ok) {
+                                                                            throw new Error('Failed to fetch analysis');
+                                                                        }
+                                                                        const data = await response.json();
+                                                                        if (!data.success) {
+                                                                            throw new Error(data.error || 'Analysis failed');
+                                                                        }
+                                                                        setAnalysisData(data.data);
+                                                                    } catch (error) {
+                                                                        setAnalysisError(error instanceof Error ? error.message : 'Failed to perform analysis');
+                                                                    } finally {
+                                                                        setIsLoadingAnalysis(false);
+                                                                    }
+                                                                }}
+                                                                disabled={isLoadingAnalysis || !company?.symbol}
+                                                            >
+                                                                Perform AI Analysis
+                                                            </Button>
+                                                        </div>
+                                                    </div>
+                                                )}
                                             </CardContent>
                                         </Card>
                                     </TabsContent>

@@ -1,0 +1,301 @@
+company_symbol,stock_price,date_and_time,buyer_id,buy_or_sell,headlines
+AMD,794.68,2025-02-06T13:36:58,B886491,sell,"Company sets new sustainability targets, New CEO appointed"
+AMD,998.48,2025-01-21T01:45:15,B701365,sell,Stock price surges following positive quarterly report
+AMD,1431.5,2025-01-14T22:43:27,B771906,buy,"Product recall issued, New CEO appointed"
+AMD,1198.95,2025-01-30T07:02:21,B199004,sell,New CEO appointed
+AMD,496.15,2025-01-02T00:33:24,B226905,sell,"Company plans major expansion, Stock price surges following positive quarterly report, Stock hits new all-time high"
+AMD,1103.01,2025-01-17T08:35:12,B792833,sell,Unexpected stock decline amid market uncertainty
+AMD,1475.52,2025-01-28T18:22:38,B335771,buy,"New CEO appointed, Company sets new sustainability targets"
+AMD,283.38,2025-01-19T12:39:29,B308060,sell,"Product recall issued, Company sets new sustainability targets, New CEO appointed"
+AMD,1323.68,2025-01-18T20:37:39,B880899,buy,Stock price surges following positive quarterly report
+AMD,135.2,2025-01-18T05:06:13,B909025,sell,"Product recall issued, Company sets new sustainability targets, New CEO appointed"
+AMD,1466.5,2025-02-01T09:22:44,B716417,buy,Company plans major expansion
+AMD,240.54,2025-01-10T13:13:27,B184027,sell,"New CEO appointed, Stock price surges following positive quarterly report"
+AMD,875.55,2025-01-23T00:45:22,B728310,sell,"Stock price surges following positive quarterly report, Company announces record earnings, Company plans major expansion"
+AMD,171.33,2025-01-31T10:37:46,B339982,sell,"Company plans major expansion, Company sets new sustainability targets"
+AMD,435.82,2025-01-11T23:42:47,B428109,sell,Company announces record earnings
+AMD,126.98,2025-01-21T01:24:36,B443803,sell,"Company sets new sustainability targets, Stock price surges following positive quarterly report"
+AMD,1137.34,2025-01-28T18:55:04,B668999,buy,"New CEO appointed, Product recall issued, Company sets new sustainability targets"
+AMD,1267.11,2025-01-07T10:52:49,B769785,sell,"Stock price surges following positive quarterly report, Company plans major expansion"
+AMD,643.08,2025-01-11T07:22:55,B180712,sell,"Stock hits new all-time high, New CEO appointed, Stock price surges following positive quarterly report"
+AMD,422.16,2025-01-12T15:11:53,B123472,sell,"Company sets new sustainability targets, Stock price surges following positive quarterly report"
+AMD,574.16,2025-01-25T02:26:41,B479012,sell,Company sets new sustainability targets
+AMD,1223.46,2025-01-22T18:32:20,B490695,sell,"Company plans major expansion, Company announces record earnings, Stock price surges following positive quarterly report"
+AMD,779.92,2025-01-19T04:44:58,B943022,buy,"New CEO appointed, Stock price surges following positive quarterly report, Stock hits new all-time high"
+AMD,1184.88,2025-02-06T12:39:03,B574894,sell,"Company sets new sustainability targets, Stock hits new all-time high, Product recall issued"
+AMD,765.37,2025-02-02T14:14:45,B628219,sell,"Company announces record earnings, Stock price surges following positive quarterly report, Product recall issued"
+AMD,1340.45,2025-01-13T23:05:35,B541986,sell,"Unexpected stock decline amid market uncertainty, Product recall issued"
+AMD,1358.21,2025-01-16T10:49:44,B752436,sell,"Stock hits new all-time high, Company sets new sustainability targets, Company announces record earnings"
+AMD,1440.41,2025-01-03T18:58:29,B921954,sell,"New CEO appointed, Company sets new sustainability targets"
+AMD,1305.69,2025-01-25T08:47:24,B399742,buy,"New CEO appointed, Unexpected stock decline amid market uncertainty"
+AMD,674.67,2025-01-11T16:30:58,B295895,sell,"New CEO appointed, Product recall issued, Unexpected stock decline amid market uncertainty"
+AMD,1208.1,2025-01-06T05:22:15,B297708,buy,"Stock price surges following positive quarterly report, Company plans major expansion"
+AMD,538.94,2025-01-22T03:08:58,B498392,sell,"New CEO appointed, Stock hits new all-time high, Company announces record earnings"
+AMD,1198.15,2025-01-22T06:07:25,B279579,sell,"New CEO appointed, Stock price surges following positive quarterly report, Company plans major expansion"
+AMD,137.17,2025-01-10T13:27:25,B931046,buy,"Stock price surges following positive quarterly report, New CEO appointed"
+AMD,1270.88,2025-01-20T01:43:12,B492761,sell,"Company plans major expansion, Product recall issued"
+AMD,376.31,2025-01-15T00:57:02,B722307,sell,"Company announces record earnings, Product recall issued, Company plans major expansion"
+AMD,973.6,2025-01-18T02:38:03,B173664,buy,Unexpected stock decline amid market uncertainty
+AMD,898.4,2025-01-08T07:20:39,B369545,sell,"Company sets new sustainability targets, Unexpected stock decline amid market uncertainty, Product recall issued"
+AMD,1425.49,2025-01-26T03:50:51,B931933,buy,Stock hits new all-time high
+AMD,813.86,2025-02-02T19:06:57,B103625,sell,Stock price surges following positive quarterly report
+AMD,957.73,2025-01-18T22:42:28,B186464,buy,"Stock price surges following positive quarterly report, Unexpected stock decline amid market uncertainty, Company plans major expansion"
+AMD,977.22,2025-01-16T06:17:09,B192531,sell,Company sets new sustainability targets
+AMD,1356.4,2025-01-02T11:41:53,B868236,sell,"Unexpected stock decline amid market uncertainty, Company plans major expansion"
+AMD,628.69,2025-01-01T13:05:50,B252454,sell,"Unexpected stock decline amid market uncertainty, Product recall issued"
+AMD,958.4,2025-01-17T11:30:05,B588933,buy,"Stock hits new all-time high, Company announces record earnings"
+AMD,388.82,2025-02-07T20:31:58,B696168,buy,"Stock hits new all-time high, Company announces record earnings"
+AMD,457.31,2025-01-08T22:45:57,B336803,sell,"Product recall issued, New CEO appointed"
+AMD,133.47,2025-01-26T22:29:34,B918618,sell,"Company plans major expansion, Unexpected stock decline amid market uncertainty, New CEO appointed"
+AMD,340.81,2025-01-21T23:55:45,B782919,buy,Stock hits new all-time high
+AMD,936.48,2025-02-02T21:53:22,B529098,buy,"New CEO appointed, Company plans major expansion"
+CCL,645.64,2025-01-13T03:15:29,B973689,buy,Company sets new sustainability targets
+CCL,629.32,2025-01-03T13:20:51,B247209,sell,"Stock price surges following positive quarterly report, New CEO appointed, Company sets new sustainability targets"
+CCL,206.24,2025-01-08T03:28:34,B446510,buy,"Unexpected stock decline amid market uncertainty, New CEO appointed, Stock price surges following positive quarterly report"
+CCL,343.27,2025-01-13T16:51:38,B942429,buy,"Unexpected stock decline amid market uncertainty, Company plans major expansion"
+CCL,780.17,2025-01-03T05:04:56,B868815,buy,"Company plans major expansion, Product recall issued"
+CCL,1413.84,2025-01-02T17:39:52,B925348,buy,"Company plans major expansion, Company announces record earnings"
+CCL,853.22,2025-01-20T16:27:24,B732451,buy,"Stock hits new all-time high, Product recall issued, New CEO appointed"
+CCL,266.01,2025-01-28T04:47:33,B403822,sell,"Company announces record earnings, Unexpected stock decline amid market uncertainty"
+CCL,1366.67,2025-01-04T00:31:45,B648957,buy,"New CEO appointed, Company announces record earnings, Product recall issued"
+CCL,1369.04,2025-01-22T15:31:12,B773528,sell,"Company sets new sustainability targets, Company announces record earnings, Stock hits new all-time high"
+CCL,1159.06,2025-02-06T13:37:33,B466435,buy,"Unexpected stock decline amid market uncertainty, Company plans major expansion, New CEO appointed"
+CCL,1167.16,2025-01-24T08:38:20,B493122,sell,Product recall issued
+CCL,1066.88,2025-01-17T09:09:51,B491428,buy,Company sets new sustainability targets
+CCL,627.6,2025-01-24T12:39:50,B988488,sell,"Company announces record earnings, Product recall issued, Company sets new sustainability targets"
+CCL,192.32,2025-01-15T16:01:56,B302106,sell,Company plans major expansion
+CCL,124.95,2025-02-03T21:14:22,B959979,sell,"Company announces record earnings, Company sets new sustainability targets"
+CCL,921.25,2025-01-22T22:28:09,B711046,sell,"Company sets new sustainability targets, New CEO appointed, Company announces record earnings"
+CCL,1169.57,2025-01-15T12:43:45,B760152,sell,"Stock price surges following positive quarterly report, Stock hits new all-time high"
+CCL,718.63,2025-01-30T04:43:03,B136531,buy,"Company announces record earnings, Unexpected stock decline amid market uncertainty, Stock hits new all-time high"
+CCL,112.0,2025-01-12T06:59:11,B639326,buy,Company sets new sustainability targets
+CCL,1163.44,2025-01-19T17:33:24,B196765,sell,"Unexpected stock decline amid market uncertainty, Company plans major expansion"
+CCL,417.39,2025-01-29T15:18:13,B448637,buy,"Company announces record earnings, Company plans major expansion"
+CCL,536.9,2025-01-01T14:49:06,B323913,sell,"New CEO appointed, Company announces record earnings"
+CCL,901.82,2025-01-13T09:57:12,B301388,buy,Stock hits new all-time high
+CCL,90.04,2025-01-11T04:02:21,B890857,buy,"Company announces record earnings, Company sets new sustainability targets, Company plans major expansion"
+CCL,766.99,2025-01-30T09:24:22,B931609,sell,Stock hits new all-time high
+CCL,353.13,2025-01-26T08:45:50,B384237,buy,Company plans major expansion
+CCL,1339.97,2025-01-29T19:32:48,B804376,sell,New CEO appointed
+CCL,937.6,2025-01-30T06:40:35,B201151,sell,"Product recall issued, Company sets new sustainability targets"
+CCL,305.22,2025-01-01T12:06:13,B976160,buy,"Company plans major expansion, Unexpected stock decline amid market uncertainty, New CEO appointed"
+CCL,69.49,2025-01-03T18:49:56,B980784,buy,"Company sets new sustainability targets, New CEO appointed"
+CCL,73.3,2025-01-10T15:16:34,B115552,sell,"Company plans major expansion, Company announces record earnings, Product recall issued"
+CCL,832.73,2025-01-21T00:57:30,B845097,buy,"Unexpected stock decline amid market uncertainty, Stock price surges following positive quarterly report"
+CCL,1464.69,2025-01-06T08:13:22,B699160,sell,"Product recall issued, Unexpected stock decline amid market uncertainty, New CEO appointed"
+CCL,608.47,2025-01-08T09:27:35,B577896,buy,"Stock hits new all-time high, Company announces record earnings"
+CCL,1433.24,2025-01-27T23:19:24,B884936,buy,New CEO appointed
+CCL,102.72,2025-01-09T12:11:36,B569314,sell,Stock price surges following positive quarterly report
+CCL,800.93,2025-01-12T17:57:48,B161687,buy,"New CEO appointed, Product recall issued, Unexpected stock decline amid market uncertainty"
+CCL,85.75,2025-01-26T04:40:14,B860652,buy,Stock price surges following positive quarterly report
+CCL,739.36,2025-01-06T21:34:27,B991114,buy,"Stock hits new all-time high, Company announces record earnings"
+CCL,860.09,2025-01-31T00:23:13,B898364,buy,Company plans major expansion
+CCL,1499.36,2025-01-29T18:43:20,B229197,sell,"Stock price surges following positive quarterly report, Company announces record earnings"
+CCL,229.49,2025-01-01T04:34:11,B334194,buy,"Company announces record earnings, Stock hits new all-time high, Unexpected stock decline amid market uncertainty"
+CCL,62.77,2025-01-31T23:49:57,B286733,sell,Stock price surges following positive quarterly report
+CCL,580.25,2025-01-30T09:21:26,B406515,sell,"Unexpected stock decline amid market uncertainty, Company announces record earnings"
+CCL,596.57,2025-01-17T11:40:16,B624102,sell,"New CEO appointed, Unexpected stock decline amid market uncertainty, Company sets new sustainability targets"
+CCL,1266.46,2025-02-04T01:10:15,B444900,sell,"Stock price surges following positive quarterly report, Unexpected stock decline amid market uncertainty"
+CCL,572.5,2025-02-02T12:10:10,B259914,sell,Company plans major expansion
+CCL,550.08,2025-01-07T01:59:38,B744190,sell,"Company announces record earnings, Stock hits new all-time high, Stock price surges following positive quarterly report"
+CCL,1090.93,2025-01-23T11:34:47,B889897,buy,"Company sets new sustainability targets, Stock price surges following positive quarterly report"
+NCLH,1074.05,2025-01-07T22:05:34,B612328,sell,Stock hits new all-time high
+NCLH,110.88,2025-01-14T16:24:12,B991342,sell,"Product recall issued, Stock price surges following positive quarterly report, New CEO appointed"
+NCLH,94.96,2025-02-02T22:31:39,B203573,buy,"Unexpected stock decline amid market uncertainty, Company plans major expansion, New CEO appointed"
+NCLH,1466.82,2025-01-21T04:05:36,B300734,buy,"Product recall issued, Stock hits new all-time high"
+NCLH,954.31,2025-02-07T08:43:37,B957571,sell,"New CEO appointed, Company announces record earnings"
+NCLH,631.21,2025-01-23T19:17:12,B437598,buy,"Company sets new sustainability targets, Company announces record earnings, Unexpected stock decline amid market uncertainty"
+NCLH,409.95,2025-01-18T16:23:30,B699947,buy,"New CEO appointed, Company announces record earnings"
+NCLH,1104.99,2025-01-28T04:53:55,B511180,buy,"Company plans major expansion, New CEO appointed"
+NCLH,236.58,2025-02-01T05:52:20,B877555,buy,"Stock price surges following positive quarterly report, Company sets new sustainability targets, Unexpected stock decline amid market uncertainty"
+NCLH,1371.1,2025-02-07T20:43:29,B343078,buy,"Company sets new sustainability targets, Company plans major expansion, Stock hits new all-time high"
+NCLH,1277.4,2025-01-11T07:05:12,B415266,buy,"Company sets new sustainability targets, Stock hits new all-time high, New CEO appointed"
+NCLH,905.39,2025-01-20T20:55:35,B842633,buy,Unexpected stock decline amid market uncertainty
+NCLH,1158.06,2025-01-15T11:08:02,B281469,sell,"Unexpected stock decline amid market uncertainty, Company sets new sustainability targets, Product recall issued"
+NCLH,483.77,2025-01-06T10:30:38,B250795,buy,Company announces record earnings
+NCLH,1051.98,2025-01-26T17:04:38,B680263,buy,Company plans major expansion
+NCLH,575.87,2025-01-01T14:37:31,B225331,sell,"Company announces record earnings, Unexpected stock decline amid market uncertainty, Company plans major expansion"
+NCLH,763.65,2025-01-10T18:30:03,B888645,sell,"Stock hits new all-time high, Company plans major expansion"
+NCLH,745.04,2025-01-01T18:40:00,B983528,buy,"Company plans major expansion, Product recall issued, Unexpected stock decline amid market uncertainty"
+NCLH,1262.46,2025-01-07T18:32:46,B617722,buy,"Stock price surges following positive quarterly report, Company plans major expansion, New CEO appointed"
+NCLH,1457.74,2025-01-02T05:09:42,B210447,sell,Company announces record earnings
+NCLH,187.44,2025-01-30T23:54:49,B891315,buy,"Company sets new sustainability targets, Company announces record earnings"
+NCLH,1178.29,2025-01-27T02:47:23,B403454,buy,Company announces record earnings
+NCLH,156.46,2025-01-03T17:40:57,B353688,buy,Company sets new sustainability targets
+NCLH,711.18,2025-01-05T11:04:10,B898874,buy,"Product recall issued, New CEO appointed, Company sets new sustainability targets"
+NCLH,92.8,2025-01-24T21:30:41,B687966,buy,"Product recall issued, Stock price surges following positive quarterly report, Company sets new sustainability targets"
+NCLH,1216.23,2025-01-08T19:58:23,B832222,buy,"New CEO appointed, Stock hits new all-time high, Product recall issued"
+NCLH,1250.07,2025-01-22T00:27:41,B910639,buy,Company sets new sustainability targets
+NCLH,977.04,2025-02-03T15:21:38,B514990,buy,New CEO appointed
+NCLH,1122.49,2025-01-08T02:48:02,B890409,buy,"Unexpected stock decline amid market uncertainty, New CEO appointed, Company plans major expansion"
+NCLH,1464.56,2025-02-06T20:12:45,B182989,sell,Company announces record earnings
+NCLH,56.96,2025-01-19T10:22:04,B576535,sell,"Stock hits new all-time high, Product recall issued"
+NCLH,738.65,2025-01-20T03:15:12,B851475,sell,"Unexpected stock decline amid market uncertainty, Company plans major expansion"
+NCLH,273.67,2025-01-02T10:20:27,B213318,sell,Stock price surges following positive quarterly report
+NCLH,364.52,2025-02-02T14:30:22,B890009,buy,"Stock hits new all-time high, Unexpected stock decline amid market uncertainty, Product recall issued"
+NCLH,918.84,2025-01-18T22:37:11,B474238,sell,"Stock hits new all-time high, Company plans major expansion"
+NCLH,1290.56,2025-01-10T15:20:58,B391182,buy,"New CEO appointed, Stock hits new all-time high"
+NCLH,722.74,2025-01-13T00:49:41,B777662,buy,Stock hits new all-time high
+NCLH,1350.99,2025-01-22T09:07:18,B112854,buy,New CEO appointed
+NCLH,76.93,2025-01-14T03:27:43,B749765,buy,Product recall issued
+NCLH,1276.97,2025-01-25T18:41:04,B474837,buy,"Company announces record earnings, Company plans major expansion, Stock price surges following positive quarterly report"
+NCLH,1012.38,2025-01-30T11:03:56,B366799,sell,"Unexpected stock decline amid market uncertainty, Stock hits new all-time high, Company plans major expansion"
+NCLH,1305.53,2025-01-07T08:25:23,B410063,sell,"Company sets new sustainability targets, Unexpected stock decline amid market uncertainty, New CEO appointed"
+NCLH,873.13,2025-02-01T18:13:36,B954228,buy,"Company sets new sustainability targets, Company plans major expansion, Stock price surges following positive quarterly report"
+NCLH,1398.43,2025-01-06T20:23:09,B674797,sell,Company announces record earnings
+NCLH,705.44,2025-01-25T00:16:35,B925666,sell,Company plans major expansion
+NCLH,1235.02,2025-02-06T14:48:30,B277233,sell,Company sets new sustainability targets
+NCLH,573.95,2025-01-30T23:25:31,B269572,sell,Company announces record earnings
+NCLH,1375.56,2025-01-06T07:28:45,B291714,buy,"Unexpected stock decline amid market uncertainty, Company sets new sustainability targets, Company plans major expansion"
+NCLH,180.54,2025-01-15T11:46:25,B793161,buy,"Stock hits new all-time high, Unexpected stock decline amid market uncertainty, Company sets new sustainability targets"
+NCLH,127.25,2025-02-07T02:45:35,B653852,buy,"Stock price surges following positive quarterly report, Product recall issued, Stock hits new all-time high"
+NVDA,669.07,2025-01-05T09:14:26,B601971,sell,"Stock hits new all-time high, Company announces record earnings, Product recall issued"
+NVDA,1336.06,2025-01-25T02:14:23,B446816,buy,"Stock price surges following positive quarterly report, Stock hits new all-time high"
+NVDA,532.7,2025-01-20T20:39:30,B652895,buy,"Product recall issued, Stock hits new all-time high"
+NVDA,1114.4,2025-01-18T09:20:25,B147701,sell,Company announces record earnings
+NVDA,835.24,2025-01-21T14:08:27,B314221,buy,Stock price surges following positive quarterly report
+NVDA,1019.25,2025-02-03T15:54:55,B649838,buy,"New CEO appointed, Company announces record earnings"
+NVDA,882.2,2025-01-07T15:16:54,B689106,sell,"Product recall issued, Company plans major expansion, Unexpected stock decline amid market uncertainty"
+NVDA,678.53,2025-01-07T22:36:05,B696349,buy,Company plans major expansion
+NVDA,655.61,2025-01-29T01:34:54,B179981,buy,"Product recall issued, Unexpected stock decline amid market uncertainty"
+NVDA,1247.57,2025-01-08T00:22:27,B608109,sell,"New CEO appointed, Unexpected stock decline amid market uncertainty"
+NVDA,681.53,2025-01-03T00:58:55,B414015,sell,"Product recall issued, Unexpected stock decline amid market uncertainty, Stock hits new all-time high"
+NVDA,1323.14,2025-01-25T10:28:26,B324549,buy,"Company plans major expansion, Unexpected stock decline amid market uncertainty"
+NVDA,487.49,2025-01-07T21:56:26,B828470,buy,"Company announces record earnings, Unexpected stock decline amid market uncertainty"
+NVDA,150.86,2025-01-06T03:23:52,B857269,buy,"Unexpected stock decline amid market uncertainty, Stock hits new all-time high"
+NVDA,677.03,2025-01-24T07:39:58,B730462,buy,"Company sets new sustainability targets, New CEO appointed, Stock hits new all-time high"
+NVDA,1218.54,2025-01-05T08:08:25,B711913,sell,"Product recall issued, Company plans major expansion, Stock hits new all-time high"
+NVDA,1344.32,2025-02-07T21:04:37,B257708,buy,"Stock hits new all-time high, New CEO appointed, Company sets new sustainability targets"
+NVDA,85.44,2025-01-12T07:43:34,B622952,buy,Company plans major expansion
+NVDA,484.09,2025-01-19T01:21:33,B338330,sell,"Company plans major expansion, Stock hits new all-time high"
+NVDA,1207.77,2025-02-07T21:05:22,B288862,sell,"Company announces record earnings, Stock hits new all-time high"
+NVDA,440.77,2025-01-30T11:20:12,B323317,buy,"Stock hits new all-time high, Company plans major expansion"
+NVDA,644.65,2025-01-07T05:53:35,B779760,sell,Unexpected stock decline amid market uncertainty
+NVDA,147.84,2025-01-17T19:01:25,B864050,sell,"Unexpected stock decline amid market uncertainty, Product recall issued"
+NVDA,1297.04,2025-01-30T18:25:42,B319695,sell,"Company announces record earnings, Product recall issued"
+NVDA,257.03,2025-01-25T18:35:09,B179305,buy,"Company sets new sustainability targets, Unexpected stock decline amid market uncertainty"
+NVDA,339.13,2025-01-15T13:37:48,B880869,buy,"Stock price surges following positive quarterly report, Stock hits new all-time high, Company sets new sustainability targets"
+NVDA,217.01,2025-01-28T13:15:32,B607366,sell,"Stock price surges following positive quarterly report, Company announces record earnings, Unexpected stock decline amid market uncertainty"
+NVDA,474.79,2025-02-04T07:09:37,B338696,buy,"Product recall issued, Unexpected stock decline amid market uncertainty"
+NVDA,995.07,2025-01-15T12:55:46,B381435,buy,"Company announces record earnings, Stock hits new all-time high"
+NVDA,397.26,2025-01-01T09:15:03,B129112,sell,"Product recall issued, New CEO appointed, Unexpected stock decline amid market uncertainty"
+NVDA,1061.52,2025-01-20T02:57:10,B965096,sell,"Product recall issued, Company sets new sustainability targets, New CEO appointed"
+NVDA,1288.88,2025-01-14T01:46:39,B402666,sell,Product recall issued
+NVDA,1016.55,2025-01-07T17:20:04,B537158,sell,"New CEO appointed, Product recall issued"
+NVDA,1247.23,2025-01-29T18:52:12,B873889,buy,"Company plans major expansion, New CEO appointed, Stock hits new all-time high"
+NVDA,751.81,2025-01-16T12:30:18,B537667,sell,"Company plans major expansion, Company announces record earnings, Stock price surges following positive quarterly report"
+NVDA,1255.5,2025-01-27T14:46:18,B903183,buy,"Stock price surges following positive quarterly report, New CEO appointed"
+NVDA,1446.43,2025-01-21T14:30:54,B944867,sell,"Stock price surges following positive quarterly report, Company announces record earnings, Company plans major expansion"
+NVDA,1304.59,2025-01-29T18:47:57,B155270,sell,"Product recall issued, Company plans major expansion"
+NVDA,1005.17,2025-01-11T19:33:44,B586960,buy,"Company plans major expansion, Company sets new sustainability targets"
+NVDA,730.66,2025-01-19T13:06:41,B437356,buy,"Company plans major expansion, Stock price surges following positive quarterly report"
+NVDA,888.24,2025-01-05T18:33:41,B290621,buy,"New CEO appointed, Stock hits new all-time high, Unexpected stock decline amid market uncertainty"
+NVDA,263.1,2025-01-01T12:06:56,B874239,sell,Company plans major expansion
+NVDA,1409.08,2025-02-07T05:53:37,B927494,buy,"Stock hits new all-time high, New CEO appointed"
+NVDA,547.85,2025-01-10T11:07:11,B580946,sell,New CEO appointed
+NVDA,246.02,2025-01-05T10:09:38,B365982,sell,"Company sets new sustainability targets, Stock hits new all-time high, Stock price surges following positive quarterly report"
+NVDA,976.65,2025-01-13T04:48:53,B353505,sell,"Stock price surges following positive quarterly report, Company announces record earnings, Stock hits new all-time high"
+NVDA,257.19,2025-01-03T17:22:14,B564620,buy,"Company announces record earnings, Product recall issued"
+NVDA,1320.63,2025-01-14T11:58:57,B879994,buy,"Company sets new sustainability targets, New CEO appointed"
+NVDA,985.11,2025-01-01T06:14:45,B336839,buy,"Company announces record earnings, Company plans major expansion, Product recall issued"
+NVDA,771.04,2025-01-25T05:48:44,B435103,buy,"Company announces record earnings, Unexpected stock decline amid market uncertainty, Company plans major expansion"
+SNDL,569.56,2025-01-29T22:49:08,B786538,buy,"Unexpected stock decline amid market uncertainty, Stock price surges following positive quarterly report, New CEO appointed"
+SNDL,1165.51,2025-02-02T12:44:58,B937139,buy,"New CEO appointed, Stock price surges following positive quarterly report, Stock hits new all-time high"
+SNDL,405.76,2025-02-07T19:42:14,B589134,sell,"Stock hits new all-time high, Unexpected stock decline amid market uncertainty"
+SNDL,1452.28,2025-02-06T15:30:19,B625395,sell,Stock hits new all-time high
+SNDL,141.6,2025-01-30T09:56:33,B786499,sell,New CEO appointed
+SNDL,1151.52,2025-01-30T05:15:58,B409870,buy,"Stock price surges following positive quarterly report, Company sets new sustainability targets, Stock hits new all-time high"
+SNDL,710.71,2025-01-11T19:55:15,B163140,buy,"Product recall issued, Unexpected stock decline amid market uncertainty"
+SNDL,267.99,2025-01-07T07:48:28,B936749,sell,"New CEO appointed, Stock price surges following positive quarterly report, Company announces record earnings"
+SNDL,1224.08,2025-01-12T11:25:33,B367161,buy,"Unexpected stock decline amid market uncertainty, Company sets new sustainability targets, Company announces record earnings"
+SNDL,148.99,2025-01-29T08:39:06,B270867,buy,"Unexpected stock decline amid market uncertainty, Company plans major expansion"
+SNDL,1051.77,2025-01-07T05:20:50,B861035,sell,New CEO appointed
+SNDL,659.28,2025-01-09T16:20:57,B264291,sell,"Unexpected stock decline amid market uncertainty, New CEO appointed, Company plans major expansion"
+SNDL,1339.14,2025-01-06T03:01:26,B865021,sell,"Company announces record earnings, Company sets new sustainability targets, Stock price surges following positive quarterly report"
+SNDL,740.95,2025-01-19T21:16:00,B120268,buy,Company plans major expansion
+SNDL,921.32,2025-01-26T16:53:23,B287644,buy,Company sets new sustainability targets
+SNDL,1359.75,2025-01-25T04:40:49,B424168,sell,"Stock price surges following positive quarterly report, Company plans major expansion, Product recall issued"
+SNDL,1481.48,2025-01-13T21:39:46,B383246,buy,New CEO appointed
+SNDL,100.19,2025-01-16T09:08:34,B522956,sell,"Stock price surges following positive quarterly report, Stock hits new all-time high, Company sets new sustainability targets"
+SNDL,1379.4,2025-01-08T05:46:00,B330463,sell,"Company plans major expansion, Unexpected stock decline amid market uncertainty, New CEO appointed"
+SNDL,1365.09,2025-01-05T09:01:50,B856529,buy,Company announces record earnings
+SNDL,1254.46,2025-01-25T12:10:46,B579521,sell,"New CEO appointed, Company sets new sustainability targets"
+SNDL,985.92,2025-01-29T04:48:06,B146778,sell,Stock price surges following positive quarterly report
+SNDL,1411.8,2025-01-23T09:01:15,B802145,buy,Stock price surges following positive quarterly report
+SNDL,575.9,2025-01-02T00:17:15,B489016,sell,"New CEO appointed, Stock hits new all-time high, Stock price surges following positive quarterly report"
+SNDL,370.43,2025-01-29T14:05:33,B998776,buy,"Unexpected stock decline amid market uncertainty, Company plans major expansion, Stock hits new all-time high"
+SNDL,434.93,2025-01-30T07:08:29,B984670,buy,"Company sets new sustainability targets, Stock hits new all-time high, Company announces record earnings"
+SNDL,368.91,2025-02-03T04:11:44,B384974,sell,"New CEO appointed, Unexpected stock decline amid market uncertainty"
+SNDL,164.4,2025-01-08T19:56:39,B929756,sell,Company sets new sustainability targets
+SNDL,866.27,2025-01-17T18:25:55,B466008,sell,Company sets new sustainability targets
+SNDL,106.46,2025-02-05T10:22:05,B623178,buy,Stock hits new all-time high
+SNDL,795.46,2025-01-08T08:22:48,B132848,buy,Unexpected stock decline amid market uncertainty
+SNDL,1094.6,2025-01-27T08:27:49,B680167,sell,Product recall issued
+SNDL,429.08,2025-02-07T20:52:17,B556324,buy,"New CEO appointed, Product recall issued"
+SNDL,407.3,2025-02-01T06:16:33,B742652,sell,"Stock hits new all-time high, Company sets new sustainability targets, Company announces record earnings"
+SNDL,574.87,2025-01-29T11:55:02,B638890,sell,"Stock hits new all-time high, Stock price surges following positive quarterly report, Company plans major expansion"
+SNDL,1095.22,2025-01-10T01:53:13,B107354,sell,"New CEO appointed, Product recall issued, Stock hits new all-time high"
+SNDL,819.57,2025-01-07T02:24:19,B359470,buy,"Company sets new sustainability targets, Product recall issued"
+SNDL,745.32,2025-01-12T00:26:16,B661877,sell,"Company sets new sustainability targets, Product recall issued, Stock price surges following positive quarterly report"
+SNDL,523.32,2025-01-03T04:48:15,B559895,buy,"Stock hits new all-time high, Stock price surges following positive quarterly report, Unexpected stock decline amid market uncertainty"
+SNDL,527.54,2025-01-05T07:05:42,B251179,sell,Company sets new sustainability targets
+SNDL,613.03,2025-02-01T17:29:56,B634700,sell,"Company sets new sustainability targets, Company announces record earnings"
+SNDL,1075.64,2025-01-28T12:38:56,B875989,sell,"Stock hits new all-time high, Stock price surges following positive quarterly report"
+SNDL,967.88,2025-01-07T01:03:18,B446709,buy,Product recall issued
+SNDL,1383.45,2025-01-29T16:25:51,B664701,buy,"New CEO appointed, Company plans major expansion, Company announces record earnings"
+SNDL,227.3,2025-02-04T17:52:28,B546344,buy,"Unexpected stock decline amid market uncertainty, Product recall issued"
+SNDL,1388.04,2025-02-06T13:01:28,B318579,buy,Company announces record earnings
+SNDL,530.21,2025-01-26T19:21:33,B858825,buy,"Stock price surges following positive quarterly report, New CEO appointed, Company sets new sustainability targets"
+SNDL,1112.7,2025-01-23T03:40:06,B304176,sell,"New CEO appointed, Product recall issued"
+SNDL,323.96,2025-01-10T23:53:50,B830095,sell,Unexpected stock decline amid market uncertainty
+SNDL,624.49,2025-01-27T04:35:06,B857623,buy,"Company sets new sustainability targets, Product recall issued, Company announces record earnings"
+TSLA,153.3,2025-01-28T23:15:26,B550421,buy,Company plans major expansion
+TSLA,207.6,2025-01-20T23:55:20,B865032,buy,Unexpected stock decline amid market uncertainty
+TSLA,1473.76,2025-01-27T14:14:39,B935148,sell,"New CEO appointed, Company sets new sustainability targets, Stock hits new all-time high"
+TSLA,1062.9,2025-01-03T04:46:39,B117160,sell,"Stock hits new all-time high, Unexpected stock decline amid market uncertainty"
+TSLA,1037.4,2025-01-07T11:38:36,B765175,buy,"Stock price surges following positive quarterly report, Product recall issued"
+TSLA,665.15,2025-01-09T17:02:11,B768870,buy,"Company plans major expansion, Company sets new sustainability targets, New CEO appointed"
+TSLA,409.49,2025-01-14T18:33:24,B381870,sell,Company announces record earnings
+TSLA,1391.48,2025-02-04T09:17:09,B227981,sell,Company sets new sustainability targets
+TSLA,523.61,2025-01-16T14:43:47,B810177,buy,"Company announces record earnings, Company plans major expansion"
+TSLA,1025.59,2025-02-01T16:15:10,B971914,buy,"Product recall issued, New CEO appointed"
+TSLA,1496.59,2025-01-06T10:10:42,B812451,buy,"Stock price surges following positive quarterly report, Unexpected stock decline amid market uncertainty, New CEO appointed"
+TSLA,991.04,2025-01-11T18:01:03,B919290,buy,Company plans major expansion
+TSLA,286.07,2025-01-31T23:09:43,B459141,sell,Company sets new sustainability targets
+TSLA,1109.61,2025-01-06T13:31:07,B861892,buy,Stock price surges following positive quarterly report
+TSLA,1165.44,2025-01-23T11:28:52,B504836,buy,"Stock price surges following positive quarterly report, Company sets new sustainability targets, Unexpected stock decline amid market uncertainty"
+TSLA,1275.2,2025-01-14T00:38:24,B534995,buy,"Stock price surges following positive quarterly report, Stock hits new all-time high"
+TSLA,1372.5,2025-01-19T03:24:15,B104900,buy,"New CEO appointed, Company announces record earnings"
+TSLA,372.49,2025-02-04T08:42:25,B536761,buy,"Company plans major expansion, Stock price surges following positive quarterly report"
+TSLA,788.56,2025-01-22T20:17:13,B399594,sell,"Unexpected stock decline amid market uncertainty, Company announces record earnings"
+TSLA,1104.22,2025-01-07T03:55:15,B101107,buy,"Company announces record earnings, Stock price surges following positive quarterly report, Product recall issued"
+TSLA,75.16,2025-02-03T09:33:39,B842649,buy,"Company plans major expansion, New CEO appointed"
+TSLA,391.91,2025-01-08T01:21:55,B405771,buy,Company plans major expansion
+TSLA,538.86,2025-02-04T08:23:21,B378611,buy,Product recall issued
+TSLA,325.72,2025-02-06T06:46:05,B933515,sell,"New CEO appointed, Company plans major expansion, Company announces record earnings"
+TSLA,1184.84,2025-02-07T16:19:25,B494044,buy,"Unexpected stock decline amid market uncertainty, Company announces record earnings"
+TSLA,1387.35,2025-01-13T19:26:32,B501855,buy,"Company plans major expansion, Company announces record earnings, Unexpected stock decline amid market uncertainty"
+TSLA,696.69,2025-01-23T00:12:05,B346090,sell,"Unexpected stock decline amid market uncertainty, Stock hits new all-time high"
+TSLA,1324.91,2025-01-03T16:08:49,B895266,buy,"Company plans major expansion, Stock price surges following positive quarterly report"
+TSLA,1428.97,2025-01-27T04:14:15,B959584,sell,"Unexpected stock decline amid market uncertainty, Company announces record earnings, Stock price surges following positive quarterly report"
+TSLA,1469.18,2025-01-08T11:14:34,B945862,buy,"Company announces record earnings, Stock price surges following positive quarterly report, Stock hits new all-time high"
+TSLA,658.38,2025-01-03T04:32:32,B862532,buy,Stock price surges following positive quarterly report
+TSLA,278.59,2025-01-06T00:03:57,B157901,sell,"Company plans major expansion, Product recall issued, Company announces record earnings"
+TSLA,725.14,2025-02-01T17:40:25,B250652,sell,"Company plans major expansion, Stock price surges following positive quarterly report, Company announces record earnings"
+TSLA,317.54,2025-01-07T03:20:25,B891018,sell,"Company sets new sustainability targets, Product recall issued"
+TSLA,1423.04,2025-01-02T03:26:58,B442244,sell,"Unexpected stock decline amid market uncertainty, Company sets new sustainability targets, Stock hits new all-time high"
+TSLA,1306.55,2025-01-11T10:39:05,B285982,sell,"Company plans major expansion, Company announces record earnings"
+TSLA,1452.77,2025-01-13T13:58:24,B337918,buy,"New CEO appointed, Company announces record earnings"
+TSLA,1489.12,2025-01-09T22:22:23,B783675,sell,Company plans major expansion
+TSLA,1268.15,2025-01-17T16:06:41,B555086,buy,"New CEO appointed, Company sets new sustainability targets, Company announces record earnings"
+TSLA,844.81,2025-01-17T09:40:39,B655653,buy,Company sets new sustainability targets
+TSLA,1469.34,2025-01-05T13:57:48,B269037,sell,Product recall issued
+TSLA,621.42,2025-01-05T08:01:22,B788667,buy,"Company plans major expansion, Company announces record earnings"
+TSLA,409.75,2025-01-13T22:01:34,B903793,sell,"New CEO appointed, Company plans major expansion"
+TSLA,1106.91,2025-01-02T09:31:37,B461434,buy,Product recall issued
+TSLA,1292.93,2025-01-10T14:21:39,B760333,sell,Company announces record earnings
+TSLA,828.15,2025-01-12T17:13:14,B757608,sell,Product recall issued
+TSLA,74.21,2025-01-27T12:42:33,B207906,buy,"Product recall issued, Stock price surges following positive quarterly report"
+TSLA,99.72,2025-01-22T12:54:52,B596523,sell,"Company plans major expansion, Stock hits new all-time high"
+TSLA,1398.45,2025-02-04T05:05:42,B622746,buy,"Company plans major expansion, Unexpected stock decline amid market uncertainty"
+TSLA,797.22,2025-02-04T17:20:34,B146721,buy,"Company plans major expansion, Product recall issued"

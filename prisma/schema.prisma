@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model transaction {
+  company_symbol String?
+  stock_price    Float?
+  date_and_time  DateTime?              @db.Timestamptz(6)
+  buyer_id       String?
+  buy_or_sell    String?
+  headlines      String?
+  id             String                 @id
+  embeddings     Unsupported("vector")?
+}
