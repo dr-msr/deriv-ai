@@ -1,4 +1,4 @@
-import { cookies } from "next/headers"
+import { cookies, headers } from "next/headers"
 import Image from "next/image"
 
 import { accounts } from "@/lib/data"
@@ -6,22 +6,34 @@ import { Unleashed } from "@/components/unleashed"
 import { Company } from "@/lib/company"
 
 async function getCompanies(): Promise<Company[]> {
-  // Use absolute URL in development, relative URL in production
-  const baseUrl = process.env.NODE_ENV === 'production'
-    ? process.env.VERCEL_URL 
-      ? `https://${process.env.VERCEL_URL}`
-      : 'https://unleashed-ai.vercel.app' // Replace with your actual production domain
-    : process.env.NEXT_PUBLIC_API_URL;
-
-  const response = await fetch(`${baseUrl}/api/allCompany`, {
-    cache: 'no-store'  // Disable caching to always get fresh data
-  });
-  
-  if (!response.ok) {
-    throw new Error('Failed to fetch companies');
+  try {
+    // Get the host header to construct the absolute URL
+    const headersList = headers();
+    const host = (await headersList).get('host') || 'localhost:3000';
+    const protocol = process.env.NODE_ENV === 'production' ? 'https' : 'http';
+    
+    const baseUrl = `${protocol}://${host}`;
+    console.log('Fetching companies from:', `${baseUrl}/api/allCompany`);
+    
+    const response = await fetch(`${baseUrl}/api/allCompany`, {
+      cache: 'no-store'  // Disable caching to always get fresh data
+    });
+    
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error('API Error:', {
+        status: response.status,
+        statusText: response.statusText,
+        body: errorText
+      });
+      throw new Error(`API error: ${response.status} ${response.statusText}`);
+    }
+    
+    return response.json();
+  } catch (error) {
+    console.error('Fetch error:', error);
+    throw new Error(`Failed to fetch companies: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
-  
-  return response.json();
 }
 
 export default async function MailPage() {
