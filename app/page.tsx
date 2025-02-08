@@ -6,7 +6,13 @@ import { Unleashed } from "@/components/unleashed"
 import { Company } from "@/lib/company"
 
 async function getCompanies(): Promise<Company[]> {
-  const response = await fetch('http://localhost:3000/api/allCompany', {
+  // In production (Vercel), we use relative URLs
+  // In development, we use the full URL from env
+  const baseUrl = process.env.NODE_ENV === 'production' 
+    ? '' 
+    : process.env.NEXT_PUBLIC_API_URL;
+    
+  const response = await fetch(`${baseUrl}/api/allCompany`, {
     cache: 'no-store'  // Disable caching to always get fresh data
   });
   
