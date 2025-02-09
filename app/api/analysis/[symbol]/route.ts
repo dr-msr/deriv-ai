@@ -25,6 +25,7 @@ async function validateAnalysis(
 ): Promise<AIValidation> {
   const prompt = `As a financial expert, analyze this trading situation for ${symbol}:
 
+Today's Date: ${new Date().toLocaleDateString()}
 Current Price: $${currentPrice}
 Price Change: ${trendAnalysis.priceChange} (${trendAnalysis.priceChangePercentage.toFixed(2)}%)
 Trend Direction: ${trendAnalysis.trendDirection}
@@ -51,7 +52,7 @@ Format your response in JSON:
 {
   "agreement": boolean,
   "reasoning": "detailed explanation",
-  "adjustedRecommendation": "only if you disagree",
+  "adjustedRecommendation": "give your recommendation based on the analysis",
   "confidenceScore": number,
   "keyFactors": ["list of key factors"],
   "summary": "concise summary"
